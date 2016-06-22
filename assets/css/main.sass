@@ -2,7 +2,40 @@
 ---
 //@import "typography"
 
+$featured: #fff
+
 body
   margin: 0
   padding: 0
   font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif
+
+.cntr
+  display: flex
+  justify-content: center
+  width: 100vw
+  *
+    display: block
+
+.wrapper
+  width: 860px
+  max-width: 90%
+  text-align: center
+
+#featured
+  .c-ph
+    width: 400px
+    max-width: 80%
+    margin: 0 auto
+  .read-btn
+    text-align: center
+    margin: 0 auto
+    display: flex
+    justify-content: center
+    a
+      width: 120px
+      border: 1px solid pink
+      padding: 10px 15px
+      border-radius: 50px
+      color: $featured
+      text-decoration: none
+      
