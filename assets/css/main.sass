@@ -1,6 +1,6 @@
 ---
 ---
-//@import "typography"
+@import "typography"
 
 $featured: #fff
 
@@ -21,21 +21,36 @@ body
   max-width: 90%
   text-align: center
 
+body
+  background:  url(../img/fhbg.jpg)
+  background-size: cover
+  background-attachment: fixed
+
 #featured
-  .c-ph
-    width: 400px
+  background: rgba(0,0,0,.5)
+  height: 400px
+  text-align: center
+  h1
+    display: block
+    width: 100%
+    margin: 0
+    padding: 1em 0
+    font-size: 3em
+    color: $featured
+  p
+    width: 300px
     max-width: 80%
     margin: 0 auto
-  .read-btn
-    text-align: center
-    margin: 0 auto
-    display: flex
-    justify-content: center
-    a
-      width: 120px
-      border: 1px solid pink
-      padding: 10px 15px
-      border-radius: 50px
-      color: $featured
-      text-decoration: none
-      
+    padding-bottom: 5em
+    color: $featured
+  a
+    color: $featured
+    text-decoration: none
+    padding: 15px 20px
+    border: 2px solid $featured
+    border-radius: 200px
+    &:hover
+      background-color: rgba(255, 255, 255, .3)
+
+.articles
+  height: 200vh
